@@ -1,0 +1,24 @@
+
+{
+    "candyShopApplicationApp": {
+        "ponto" : {
+            "home": {
+                "title": "Pontos",
+                "createLabel": "Criar novo Ponto",
+                "createOrEditLabel": "Criar ou editar Ponto"
+            },
+            "created": "Um novo Ponto foi criado com o identificador {{ param }}",
+            "updated": "Um Ponto foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Ponto foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Ponto {{ id }}?"
+            },
+            "detail": {
+                "title": "Ponto"
+            },
+            "quantidade": "Quantidade",
+            "validade": "Validade",
+            "usuario": "Usuario"
+        }
+    }
+}

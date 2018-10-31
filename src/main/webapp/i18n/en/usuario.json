@@ -1,0 +1,26 @@
+
+{
+    "candyShopApplicationApp": {
+        "usuario" : {
+            "home": {
+                "title": "Usuarios",
+                "createLabel": "Create a new Usuario",
+                "createOrEditLabel": "Create or edit a Usuario"
+            },
+            "created": "A new Usuario is created with identifier {{ param }}",
+            "updated": "A Usuario is updated with identifier {{ param }}",
+            "deleted": "A Usuario is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Usuario {{ id }}?"
+            },
+            "detail": {
+                "title": "Usuario"
+            },
+            "nome": "Nome",
+            "email": "Email",
+            "token": "Token",
+            "pedido": "Pedido",
+            "ponto": "Ponto"
+        }
+    }
+}
