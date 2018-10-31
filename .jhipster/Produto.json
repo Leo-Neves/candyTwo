@@ -1,0 +1,41 @@
+{
+    "name": "Produto",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "preco",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "estoque",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "categoria",
+            "otherEntityName": "categoria",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "pedido",
+            "otherEntityName": "pedido",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "produto"
+        }
+    ],
+    "changelogDate": "20181031191718",
+    "entityTableName": "produto",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

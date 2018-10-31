@@ -1,0 +1,30 @@
+{
+    "name": "Ponto",
+    "fields": [
+        {
+            "fieldName": "quantidade",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "validade",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "usuario",
+            "otherEntityName": "usuario",
+            "otherEntityRelationshipName": "ponto"
+        }
+    ],
+    "changelogDate": "20181031191720",
+    "entityTableName": "ponto",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,46 @@
+
+entity Categoria {
+	nome String
+}
+
+entity Pedido {
+	data LocalDate,
+    municipio String,
+    area Double,
+    geometria String
+}
+
+entity Produto {
+	nome String,
+	preco String,
+    estoque Integer
+}
+
+entity Usuario {
+	nome String required,
+    email String required,
+    token String
+}
+
+
+entity Ponto {
+	quantidade Integer,
+	validade LocalDate
+}
+
+
+relationship OneToMany {
+	Categoria{produto} to Produto{categoria}
+}
+
+relationship OneToMany {
+	Usuario{pedido} to Pedido{pedido}
+}
+
+relationship ManyToMany {
+	Pedido{produto} to Produto{pedido}
+}
+
+relationship OneToMany {
+	Ponto{usuario} to Usuario{ponto}
+}

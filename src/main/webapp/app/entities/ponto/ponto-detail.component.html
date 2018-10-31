@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="ponto">
+            <h2><span jhiTranslate="candyShopApplicationApp.ponto.detail.title">Ponto</span> {{ponto.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="candyShopApplicationApp.ponto.quantidade">Quantidade</span></dt>
+                <dd>
+                    <span>{{ponto.quantidade}}</span>
+                </dd>
+                <dt><span jhiTranslate="candyShopApplicationApp.ponto.validade">Validade</span></dt>
+                <dd>
+                    <span>{{ponto.validade}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/ponto', ponto.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
